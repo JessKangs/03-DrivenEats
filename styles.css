@@ -131,3 +131,15 @@ body {
     border-radius: 9px;
     outline:none; 
 }
+
+.borda {
+    border:2px solid #32B72F; 
+    border-radius: 9px;
+    outline:none; 
+}
+
+.borda-green {
+    border:2px solid #32B72F; 
+    border-radius: 9px;
+    outline:none; 
+}
