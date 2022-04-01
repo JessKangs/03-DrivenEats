@@ -36,7 +36,7 @@ body {
   
 }
 
-.prato-principal {
+.cardapio {
     margin-top: 31px;
 }
 
@@ -102,3 +102,32 @@ body {
     top: 90%;
 }
 
+.pudim {
+    margin-bottom: 100px;
+}
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 172px;
+}
+
+.pratos button {
+    width: 170px;
+    height: 216px;
+    position: absolute;
+    left: 19px;
+    z-index: 1;
+    border: none;
+    background:transparent; 
+    display:block;  
+    cursor:pointer;
+ 
+}
+
+.borda-verde {
+    border:2px solid #32B72F; 
+    border-radius: 9px;
+    outline:none; 
+}
