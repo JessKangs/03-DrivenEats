@@ -25,45 +25,45 @@
 
             <h2>Primeiro, seu prato</h2>
             <form>
-                <div class="lista-pratos selecionado">
+                <div class="lista-pratos yinyang">
 
                     <div class="pratos" onclick="escolherPrato (this)">
 
                         <img src="/img/frango_yin_yang 1.svg" alt="frango_yin_yang">
                         <h2 class="nome-prato">Frango Yin Yang</h2>
-                        <p>Um pouco de batata,
+                        <p> Um pouco de batata,
                             Um pouco de salada
                         </p>
-                        <h2 class="preço">R$ 14,90</h2>
-                        
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
-
+                        <div class="botao">
+                            <h2 class="preço">R$ 14,90</h2>
+                            <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
+                        </div>
                     </div>
 
                     <div class="pratos" onclick="escolherPrato (this)">
 
                         <img src="/img/frango_yin_yang 1.svg" alt="frango_yin_yang">
                         <h2 class="nome-prato">Frango Yin Yang</h2>
-                        <p>Um pouco de batata,
+                        <p> Um pouco de batata,
                             Um pouco de salada
                         </p>
-                        <h2 class="preço">R$ 14,90</h2>
-                        
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
-
+                        <div class="botao">
+                            <h2 class="preço">R$ 14,90</h2>
+                            <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
+                        </div>
                     </div>
 
                     <div class="pratos" onclick="escolherPrato (this)">
 
                         <img src="/img/frango_yin_yang 1.svg" alt="frango_yin_yang">
                         <h2 class="nome-prato">Frango Yin Yang</h2>
-                        <p>Um pouco de batata,
+                        <p> Um pouco de batata,
                             Um pouco de salada
                         </p>
-                        <h2 class="preço">R$ 14,90</h2>
-
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
-                        
+                        <div class="botao">
+                            <h2 class="preço">R$ 14,90</h2>
+                            <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
+                        </div>
                     </div>
 
 
@@ -92,7 +92,7 @@
                     </p>
                     <div class="botao">
                         <h2 class="preço">R$ 4,90</h2>
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
                     </p>
                     <div class="botao">
                         <h2 class="preço">R$ 4,90</h2>
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
                     </div>
                 </div>
 
@@ -117,7 +117,7 @@
                     <div class="botao">
 
                         <h2 class="preço">R$ 4,90</h2>
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
 
                     </div>
                 </div>
@@ -140,15 +140,14 @@
 
             <div class="lista-pratos sobremesa">
 
-                <div class="pratos" onclick="escolherBebida (this)">
+                <div class="pratos" onclick="escolherSobremesa(this)">
 
                     <img src="/img/pudim 1.svg" alt="pudim">
                     <h2 class="nome-prato">Pudim</h2>
-                    <p>Apenas pudim
-                    </p>
+                    <p>Apenas pudim</p>
                     <div class="botao">
                         <h2 class="preço">R$ 7,90</h2>
-                        <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
+                        <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
                     </div>
                 </div>
 
@@ -156,11 +155,11 @@
 
                     <img src="/img/pudim 1.svg" alt="pudim">
                     <h2 class="nome-prato">Pudim</h2>
-                    <p>Apenas pudim </p>
-                    <h2 class="preço">R$ 7,90</h2>
-
-                    <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
-
+                    <p>Apenas pudim</p>
+                    <div class="botao">
+                        <h2 class="preço">R$ 7,90</h2>
+                        <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
+                    </div>
                 </div>
 
                 <div class="pratos" onclick="escolherSobremesa(this)">
@@ -168,10 +167,10 @@
                     <img src="/img/pudim 1.svg" alt="pudim">
                     <h2 class="nome-prato">Pudim</h2>
                     <p>Apenas pudim</p>
-                    <h2 class="preço">R$ 7,90</h2>
-
-                    <ion-icon name="checkmark-circle" class="escondido"></ion-icon>
-
+                    <div class="botao">
+                        <h2 class="preço">R$ 7,90</h2>
+                        <ion-icon name="checkmark-circle" class="escondido check"></ion-icon>
+                    </div>
                 </div>
 
 
@@ -181,7 +180,7 @@
     </div>
 
     <div class="barra-bottom">
-        <button class="" >Selecione os 3 itens para fechar o pedido</button>
+        <button class="finalizar" onclick="pedir()">Selecione os 3 itens para fechar o pedido</button>
     </div>
 
     <script src="/script.js"></script>
