@@ -140,7 +140,7 @@
 
             <div class="lista-pratos sobremesa">
 
-                <div class="pratos" onclick="escolherSobremesa(this)">
+                <div class="pratos" onclick="escolherSobremesa(this), pedir(this)">
 
                     <img src="/img/pudim 1.svg" alt="pudim">
                     <h2 class="nome-prato">Pudim</h2>
@@ -151,7 +151,7 @@
                     </div>
                 </div>
 
-                <div class="pratos" onclick="escolherSobremesa(this)">
+                <div class="pratos" onclick="escolherSobremesa(this), pedir(this)">
 
                     <img src="/img/pudim 1.svg" alt="pudim">
                     <h2 class="nome-prato">Pudim</h2>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="pratos" onclick="escolherSobremesa(this)">
+                <div class="pratos" onclick="escolherSobremesa(this), pedir(this)">
 
                     <img src="/img/pudim 1.svg" alt="pudim">
                     <h2 class="nome-prato">Pudim</h2>
@@ -180,8 +180,10 @@
     </div>
 
     <div class="barra-bottom">
-        <button class="finalizar" onclick="pedir()">Selecione os 3 itens para fechar o pedido</button>
+        <button onclick="whats(this)" class="finalizar desligado" > Selecione os 3 itens para fechar o pedido </button>
     </div>
+
+
 
     <script src="/script.js"></script>
 

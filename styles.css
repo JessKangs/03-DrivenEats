@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -114,7 +115,7 @@ body {
     justify-content: center;
 }
 
-.barra-bottom button {
+.desligado {
     border-radius: 50px;
     width: 364px;
     height: 61px;
@@ -125,6 +126,7 @@ body {
     background-color: #CBCBCB;
     border: none;
     padding: 0 80px;
+    z-index: 2;
 }
 
 .botao-selecionado {
@@ -138,6 +140,8 @@ body {
     background-color: #32B72F;
     border: none;
     padding: 0 80px;
+    z-index: 2;
+    
 }
 
 .pudim {
@@ -149,19 +153,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     width: 172px;
-}
-
-.pratos button {
-    width: 170px;
-    height: 216px;
-    position: absolute;
-    left: 19px;
-    z-index: 1;
-    border: none;
-    background:transparent; 
-    display:block;  
-    cursor:pointer;
- 
 }
 
 .borda-verde {

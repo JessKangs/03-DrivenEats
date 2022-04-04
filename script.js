@@ -6,7 +6,7 @@ function escolherPrato(pratoClicado) {
     prato = pratoClicado.innerHTML;
 
     const elemento = document.querySelector(".borda-verde");
-    const prato1 = document.querySelector("ion-icon")
+    const prato1 = document.querySelector("ion-icon");
 
     if (elemento !== null) {
         elemento.classList.remove("borda-verde");
@@ -21,7 +21,7 @@ function escolherBebida(bebidaSelecionada) {
     bebida = bebidaSelecionada.innerHTML;
 
     const elemento = document.querySelector(".bebida").querySelector(".borda-verde");
-    const check = document.querySelector(".bebida").querySelector("ion-icon")
+    const check = document.querySelector(".bebida").querySelector("ion-icon");
     if (elemento !== null) {
         elemento.classList.remove("borda-verde")
         check.classList.add("escondido")
@@ -46,10 +46,27 @@ function escolherSobremesa(sobremesaSelecionada) {
     checkButton.classList.remove("escondido"); }
 }
 
-function perdir() {
+function pedir() {
 
     if (prato && bebida && sobremesa) {
+        
+        document.querySelector(".finalizar").classList.remove("desligado");
+        document.querySelector(".finalizar").classList.add("botao-selecionado");
+        document.querySelector(".finalizar").innerHTML = "Fechar pedido"; 
+        
+    } else {
+        alert("Você deve marcar todas as opções!")
+    }
 
-        document.querySelector(".botao").classList.add("botao-selecionado")
+}
+
+
+function whats() {
+    const text = "Fechar pedido";
+    if(prato && bebida && sobremesa)  {
+    document.querySelector(".finalizar").innerHTML = text.link('https://wa.me/5519989879392?text=Ol%c3%a1%2c+gostaria+de+fazer+o+pedido%3a%0d%0a++++-+Prato%3a+Frango+Yin+Yang%0d%0a++++-+Bebida%3a+Coquinha+Gelada%0d%0a++++-+Sobremesa%3a+Pudim%0d%0a++++Total%3a+R%24+27.70'); }
+    else {
+        alert("Você deve marcar todas as opções!")
     }
 }
+
